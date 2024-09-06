@@ -1,0 +1,168 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url('alumni.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#chatArea {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    background-image: url('path/to/your/image.jpg'); /* Path to your image */
+    background-size: cover; /* Scale the image to cover the area */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent tiling of the image */
+    color: #fff; /* Ensure text is readable */
+    border-bottom: 2px solid #333;
+    max-height: 80vh; /* Limit height to fit the chat section */
+}
+
+
+.chat-container {
+    display: flex;
+    height: 90vh;
+    width: 80%;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar {
+    width: 30%;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    box-shadow: inset -5px 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h2 {
+    text-align: center;
+    color: #007bff;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.sidebar ul li:hover {
+    background-color: rgba(0, 123, 255, 0.2);
+    color: #007bff;
+}
+
+
+.chat-area {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+}
+
+#messages {
+    flex: 1;
+    padding: 20px;
+    overflow-y: scroll;
+    border-bottom: 2px solid #eee;
+}
+
+#messages::-webkit-scrollbar {
+    width: 6px;
+}
+
+#messages::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 3px;
+}
+
+#message-form {
+    display: flex;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.8);
+    border-top: 2px solid #eee;
+}
+
+#message-form input {
+    flex: 1;
+    padding: 12px;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+#message-form input:focus {
+    border-color: #007bff;
+}
+
+#message-form button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+#message-form button img {
+    width: 24px;
+    height: 24px;
+}
+
+#poll-form {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    border-top: 2px solid #eee;
+    margin-top: 10px;
+}
+
+#poll-form input {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+#poll-form button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+#poll-form button img {
+    width: 24px;
+    height: 24px;
+}
+
+#poll-container {
+    margin-top: 20px;
+}
+
+.poll {
+    padding: 15px;
+    background: rgba(241, 241, 241, 0.8);
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.poll-options button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+}
